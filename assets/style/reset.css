@@ -16,7 +16,6 @@
   4. Improve text rendering
 */
 body {
-  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }/*
   1. Use a more-intuitive box-sizing model.
@@ -36,7 +35,6 @@ body {
   4. Improve text rendering
 */
 body {
-  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 /*
