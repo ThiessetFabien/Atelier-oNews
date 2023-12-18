@@ -1,9 +1,11 @@
 :root{
     --color-white: #fff;
+    --font: sans-serif;
 }
 
 *{
     box-sizing: border-box;
+    font-family: var(--font);
 }
 
 html {
@@ -20,6 +22,7 @@ body {
     padding: 3rem;
 
     background: url(../images/nicole.jpg) no-repeat left;
+    background-size: cover;
 
     flex-basis: 50%;
 }
@@ -28,19 +31,48 @@ body {
     color: var(--color-white);
     text-transform: uppercase;
     display: flex;
+    align-items: space-b;
 }
 
-.header_h1 {
-    word-break: break-word;
+.header__h1 {
+    line-height: 0rem;
 }
 
+.header__intro {
+    color: var(--color-white);
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-end;
+    text-align: right;
 
+    /*background: #f9f9f9;*/
+}
 
 main {
     flex-grow: 1;
+    flex-basis: 50%;
 }
 
 section {
+  position: relative;
    display: flex;
-   
+   flex-wrap: wrap;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  border: solid 0.05rem #eaeaea;
+  padding: 2rem;
+  row-gap: 2rem;
+}
+
+.article__users {
+  display: flex;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
 }
