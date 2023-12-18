@@ -1,5 +1,6 @@
 :root{
     --color-white: #fff;
+    --color-black: #000;
     --font: sans-serif;
 }
 
@@ -42,15 +43,29 @@ body {
     flex-direction: row;
 }
 
-
 .header__intro {
     color: var(--color-white);
-    padding: 2.4rem 1.6rem 4.8rem;
+    padding: 2.4rem 1.6rem 2.4rem 11.2rem;
     display: flex;
     flex-flow: row wrap;
+    justify-content: flex-end;
     text-align: right;
+    font-size: small;
+    text-shadow: 0.1rem 0.1rem 0.1rem var(--color-black) ;
 
     background: #f9f9f933;
+}
+
+.header__intro-title {
+    font-style: normal;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.header__intro-subtitle {
+    padding-bottom: 0.8rem;
+    font-weight: 300;
+    font-style: italic;
 }
 
 main {
@@ -58,30 +73,43 @@ main {
     flex-basis: 50%;
 }
 
-.main__title {
+.main__titleContainer {
+  display: flex;
+  align-items: center;
+
+  height: 10vh;
   background-color: #F9F9F9;
-  padding: 5vh;
+  padding: 2rem;
 }
 
 section {
   display: flex;
   flex-wrap: wrap;
+
+  overflow: auto;
 }
 
 article {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
-  justify-content: space-evenly;
+
+  padding: 0 3rem 0 3rem;
   border-bottom: solid 1px #eaeaea;
   border-left: solid 1px #eaeaea;
-  padding: 1rem;
-  row-gap: 1rem;
   height: 45vh;
+}
+
+.article__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 40%;
 }
 
 .article__tag {
   display: inline-block;
+
  color: white;
  padding: 0.5rem;
  border-radius: 3px;
@@ -125,5 +153,8 @@ time {
 figcaption {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+
   row-gap: 2rem;
+  height: 60%;
 }

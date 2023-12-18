@@ -16,30 +16,36 @@
             <div class="header__logo">            
                 <img src="./assets/images/onews.svg" alt="Logo O'Clock News" width="36" height="36">
             </div>
-            <h1 class=".header__h1">O'Clock <br>students <br>news</h1>
+            <h1>O'Clock <br>students <br>news</h1>
         </div>
 
         <div class="header__intro">
-            <b class="header__intro-title">Lastest news</b><span class="header__intro-subtitle"> from our students</span>
+            <p class="header__intro-subtitle"><b class="header__intro-title">Lastest news</b> from our students</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius corporis cum labore quia dignissimos vitae distinctio! Fugiat assumenda, natus provident ipsam obcaecati dolorem expedita autem ut minima.</p>
         </div>
 
-        <nav class="header__navbar">
-            <button class="header__plan">Plan du site</button>
-            <button class="header__mention">Mention légales</button>
-            <button class="header__contact">Contact</button>
+        <nav class="header__navbar">header__
+            <p class="header__plan">Plan du site</p>
+            <p class="header__mention">Mention légales</p>
+            <p class="header__contact">Contact</p>
         </nav>
         
     </header>
     
     <main>
-        <h2 class="main__title">Latest news</h2>
+        <div class="main__titleContainer">
+            <h2 class="main__title">Latest news</h2>
+        </div>
         <section>
             <article>
-                <div>
-                    <h4 class="article__tag article__tag--news">NEWS</h4>
+                <div class="article__title">
+                    <div>
+                        <h4 class="article__tag article__tag--news">NEWS</h4>
+                    </div>
+                    <h3>Lorem ipsum dolor sit amet.</h3>
                 </div>
-                <h3>Lorem ipsum dolor sit amet.</h3>
+
+                
                 <figcaption>
                     <div class="article__users">
                         <img class="article__img" src="./assets/images/icon-john.png" alt="image logo john">
@@ -67,7 +73,7 @@
             </article>
             <article>
                 <div>
-                    <h4 class="article__tag article__tag--news">WORK</h4>
+                    <h4 class="article__tag article__tag--work">WORK</h4>
                 </div>
                 <h3>Lorem ipsum dolor sit amet.</h3>
                 <figcaption>
@@ -80,6 +86,23 @@
                     <a href="#">Continue reading</a>
                 </figcaption>
             </article>
+
+            <article>
+                <div>
+                    <h4 class="article__tag article__tag--work">WORK</h4>
+                </div>
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <figcaption>
+                    <div class="article__users">
+                        <img class="article__img"  src="./assets/images/icon-john.png" alt="image logo john">
+                        <a class="article__linkUser" href="#">john</a>
+                        <time datetime="21/07/2019">21 Juillet 2019</time>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, pariatur!</p>
+                    <a href="#">Continue reading</a>
+                </figcaption>
+            </article>
+            
         </section>
     </main>
 
