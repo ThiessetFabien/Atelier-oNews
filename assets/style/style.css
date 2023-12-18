@@ -1,7 +1,11 @@
 :root{
     --color-white: #fff;
     --color-black: #000;
+    
     --font: sans-serif;
+    
+    --shadow: 0.1rem 0.1rem 0.1rem var(--color-black) ;
+    
 }
 
 *{
@@ -15,16 +19,16 @@ html {
 
 body {
     display: flex;
-    flex-direction: row;
     height: 100vh;
 }
 
+/* HEADER */
 .header {
     padding: 3.2rem 2.4rem;
-
+    
     background: url(../images/nicole.jpg) no-repeat left;
     background-size: cover;
-
+    color: var(--color-white);
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
@@ -33,26 +37,29 @@ body {
 }
 
 .header__logo {
-    padding: 0.3rem 0.4rem 0 0;
+    padding-right: 0.4rem;
 }
 
 .header__title {
-    color: var(--color-white);
     text-transform: uppercase;
     display: flex;
-    flex-direction: row;
+    line-height: 1.8rem;
+}
+
+.header__title-oclock {
+    overflow-wrap: auto;
+    width: 20%;
 }
 
 .header__intro {
-    color: var(--color-white);
     padding: 2.4rem 1.6rem 2.4rem 11.2rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
     text-align: right;
     font-size: small;
-    text-shadow: 0.1rem 0.1rem 0.1rem var(--color-black) ;
-
+    text-shadow: var(--shadow);
+    
     background: #f9f9f933;
 }
 
@@ -68,93 +75,110 @@ body {
     font-style: italic;
 }
 
+.header__navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 36%;
+    font-size: 1.4rem;
+
+    text-shadow: var(--shadow);
+}
+
 main {
     flex-grow: 1;
     flex-basis: 50%;
 }
 
 .main__titleContainer {
-  display: flex;
-  align-items: center;
-
-  height: 10vh;
-  background-color: #F9F9F9;
-  padding: 2rem;
+    display: flex;
+    align-items: center;
+    
+    height: 10vh;
+    background-color: #F9F9F9;
+    padding: 2rem;
+    font-size: large;
 }
 
 section {
-  display: flex;
-  flex-wrap: wrap;
-
-  overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    overflow: auto;
 }
 
 article {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    
+    padding: 1.6rem 2.4rem;
+    height: 45vh;
+}
 
-  padding: 0 3rem 0 3rem;
-  border-bottom: solid 1px #eaeaea;
-  border-left: solid 1px #eaeaea;
-  height: 45vh;
+.article--top {
+  border: solid 1px black;
+  border-collapse: collapse;
 }
 
 .article__title {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    font-size: large;
+    height: 40%;
 }
 
 .article__tag {
-  display: inline-block;
-
- color: white;
- padding: 0.5rem;
- border-radius: 3px;
+    display: inline-block;
+    
+    font-size: x-small;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 3px;
 }
 
 .article__tag--news {
- background-color: #98DC62;
+    background-color: #98DC62;
 }
 
 .article__tag--team {
-  background-color: #DC5E53;
- }
+    background-color: #DC5E53;
+}
 
- .article__tag--work {
-  background-color: #0766F0;
- }
+.article__tag--work {
+    background-color: #0766F0;
+}
 
 .article__users {
-  display: flex;
-  gap: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
 }
 
 .article__img {
-  width: 2rem;;
-  height: 2rem;
-  margin-right: 1rem;
+    width: 2rem;;
+    height: 2rem;
+    margin-right: 1rem;
 }
 
 .article__linkUser {
- margin-right: 10 rem;
- text-decoration: none;
- color: black;
- font-weight: bold;
+    margin-right: 10 rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 time {
-  color: #C2C6CC;
+    color: #C2C6CC;
 }
 
 
 figcaption {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-
-  row-gap: 2rem;
-  height: 60%;
+    display: flex;
+    flex-direction: column;
+    
+    row-gap: 2rem;
+    height: 60%;
 }
