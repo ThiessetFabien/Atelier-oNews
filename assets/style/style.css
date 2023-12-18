@@ -1,0 +1,46 @@
+:root{
+    --color-white: #fff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.header {
+    padding: 3rem;
+
+    background: url(../images/nicole.jpg) no-repeat left;
+
+    flex-basis: 50%;
+}
+
+.header__title {
+    color: var(--color-white);
+    text-transform: uppercase;
+    display: flex;
+}
+
+.header_h1 {
+    word-break: break-word;
+}
+
+
+
+main {
+    flex-grow: 1;
+}
+
+section {
+   display: flex;
+   
+}
