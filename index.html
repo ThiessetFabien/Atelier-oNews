@@ -25,9 +25,9 @@
         </div>
 
             <nav class="header__navbar">
-                <p>Plan du site</p>
-                <p>Mention légales</p>
-                <p>Contact</p>
+                <a class="header__liens" href="#">Plan du site</a>
+                <a class="header__liens" href="#">Mention légales</a>
+                <a class="header__liens" href="#">Contact</a>
             </nav>
         
         
@@ -50,10 +50,10 @@
                     <div class="article__users">
                         <img class="article__img" src="./assets/images/icon-john.png" alt="image logo john">
                         <a class="article__linkUser" href="#">John Marchill</a>
-                        <time datetime="21/07/2019">21 Juillet 2019</time>
+                        <time class="article_time" datetime="21/07/2019">le ×21 Juillet 2019</time>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consectetur, at voluptatum eaque commodi expedita.</p>
-                    <a href="#">Continue reading</a>
+                    <p class="article__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consectetur, at voluptatum eaque commodi expedita.</p>
+                    <a class="artic__reading" href="#">Continue reading</a>
                 </figcaption>
             </article>
 
@@ -62,16 +62,17 @@
                     <div>
                         <h4 class="article__tag article__tag--team">TEAM</h4>
                     </div>
-                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <h3>Le pair programming pour les n00bs</h3>
                 </div>
                 <figcaption>
                     <div class="article__users">
-                        <img class="article__img" src="./assets/images/icon-john.png" alt="image logo john">
-                        <a class="article__linkUser" href="#">John Marchill</a>
-                        <time datetime="21/07/2019">21 Juillet 2019</time>
+                        <img class="article__img" src="./assets/images/icon-dar.png" alt="image logo paul darson">
+                        <a class="article__linkUser" href="#">Paul Darson</a>
+                        <time class="article_time" datetime="02/08/2019">le 2 Août 2019</time>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consectetur, at voluptatum eaque commodi expedita.</p>
-                    <a href="#">Continue reading</a>
+                    <p class="article__description">Le pair programming pour les dévs, c'est un peu comme certains fromages : c'est mieux à deux.
+                    </p>
+                    <a class="artic__reading" href="#">Continue reading</a>
                 </figcaption>
             </article>
 
@@ -80,52 +81,56 @@
                     <div>
                         <h4 class="article__tag article__tag--work">WORK</h4>
                     </div>
-                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <h3>Pourquoi j'aime JS</h3>
                 </div>
                 <figcaption>
                     <div class="article__users">
-                        <img class="article__img" src="./assets/images/icon-john.png" alt="image logo john">
-                        <a class="article__linkUser" href="#">John Marchill</a>
-                        <time datetime="21/07/2019">21 Juillet 2019</time>
+                        <img class="article__img" src="./assets/images/icon-ohz.png" alt="image logo Bruce Ékoute
+                        ">
+                        <a class="article__linkUser" href="#">Bruce Ékoute</a>
+                        <time class="article_time" datetime="7/08/2019">le 7 Août 2019</time>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consectetur, at voluptatum eaque commodi expedita.</p>
-                    <a href="#">Continue reading</a>
+                    <p class="article__description">JavaScript est un langage très particulier, c'est indéniable. Je vous propose de faire le tour de toutes ces petites choses simples qui lui donnent une saveur si unique.
+                    </p>
+                    <a class="artic__reading" href="#">Continue reading</a>
                 </figcaption>
             </article>
 
             <article class="article--right">
                 <div class="article__title">
                     <div>
-                        <h4 class="article__tag article__tag--news">NEWS</h4>
+                        <h4 class="article__tag article__tag--team">TEAM</h4>
                     </div>
-                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <h3>La situation de scribe</h3>
                 </div>
                 <figcaption>
                     <div class="article__users">
-                        <img class="article__img" src="./assets/images/icon-john.png" alt="image logo john">
-                        <a class="article__linkUser" href="#">John Marchill</a>
-                        <time datetime="21/07/2019">21 Juillet 2019</time>
+                        <img class="article__img" src="./assets/images/icon-spr.png" alt="image logo Otis">
+                        <a class="article__linkUser" href="#">Otis</a>
+                        <time class="article_time" datetime="5/09/2019">le 5 Septembre 2019</time>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consectetur, at voluptatum eaque commodi expedita.</p>
-                    <a href="#">Continue reading</a>
+                    <p>Mais, vous savez, moi je ne crois pas qu'il y ait de bonne ou de mauvaise situation. Moi, si je devais résumer ma vie aujourd'hui avec vous, je dirais que c'est d'abord des rencontres, des gens qui m'ont tendu la main, peut-être à un moment où je ne pouvais pas, où j'étais seul chez moi. Et c'est assez curieux de se dire que les hasards, les rencontres forgent une destinée...
+                    </p>
+                    <a class="artic__reading" href="#">Continue reading</a>
                 </figcaption>
             </article>
 
             <article class="article--left">
                 <div class="article__title">
                     <div>
-                        <h4 class="article__tag article__tag--news">NEWS</h4>
+                        <h4 class="article__tag article__tag--work">WORK</h4>
                     </div>
-                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <h3>Le travail : pourquoi ce n'est jamais naturel ?</h3>
                 </div>
                 <figcaption>
                     <div class="article__users">
-                        <img class="article__img" src="./assets/images/icon-john.png" alt="image logo john">
-                        <a class="article__linkUser" href="#">John Marchill</a>
-                        <time datetime="21/07/2019">21 Juillet 2019</time>
+                        <img class="article__img" src="./assets/images/icon-tre.png" alt="image logo trouveur d'Eperon de Wyverne">
+                        <a class="article__linkUser" href="#">Trouveur d'Éperon de Wyverne</a>
+                        <time class="article_time" datetime="06/09/2019">le 6 Septembre 2019</time>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consectetur, at voluptatum eaque commodi expedita.</p>
-                    <a href="#">Continue reading</a>
+                    <p class="article__description">Le terme "travail" vient du latin "trepalium" qui signifie "torture". Voilà, je vous laisse avec ça.
+                    </p>
+                    <a class="artic__reading" href="#">Continue reading</a>
                 </figcaption>
             </article>
 
@@ -134,19 +139,19 @@
                     <div>
                         <h4 class="article__tag article__tag--news">NEWS</h4>
                     </div>
-                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <h3>Les chats augmentent la longévité</h3>
                 </div>
                 <figcaption>
                     <div class="article__users">
-                        <img class="article__img" src="./assets/images/icon-john.png" alt="image logo john">
-                        <a class="article__linkUser" href="#">John Marchill</a>
-                        <time datetime="21/07/2019">21 Juillet 2019</time>
+                        <img class="article__img" src="./assets/images/icon-tr.png" alt="image logo john Rincevent">
+                        <a class="article__linkUser" href="#">Rincevent</a>
+                        <time class="article_time" datetime="21/07/2019">le 27 Septembre 2019</time>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consectetur, at voluptatum eaque commodi expedita.</p>
-                    <a href="#">Continue reading</a>
+                    <p class="article__description">Jusqu'à un certain nombre. Au delà de 28 chats, les scientifiques semblent quelque
+                         peu sceptiques. Surtout sur l'aspect budgétaire...</p>
+                    <a class="artic__reading" href="#">Continue reading</a>
                 </figcaption>
             </article>
-            
         </section>
     </main>
 

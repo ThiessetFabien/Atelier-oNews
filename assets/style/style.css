@@ -2,6 +2,7 @@
     --color-white: #fff;
     --color-black: #000;
     --color-header: #f9f9f9;
+    --color-article-border: #eaeaea;
     
     --font: sans-serif;
     
@@ -79,12 +80,18 @@ body {
     padding-left: 36%;
     font-size: 1.2rem;
 
-    text-shadow: var(--shadow);
+    text-shadow: var(--shadow);   
+}
+
+.header__liens {
+    text-decoration: none;
+    color: var(--color-white);
 }
 
 main {
     flex-grow: 1;
     flex-basis: 50%;
+    background-color: var(--color-header);
 
     overflow: scroll;
 }
@@ -94,7 +101,6 @@ main {
     align-items: center;
     
     height: 10vh;
-    background-color: var(--color-header);
     padding: 2.4rem;
     font-size: large;
 }
@@ -103,7 +109,8 @@ section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    
+    background-color: white;
+    margin-right: 1rem;
     overflow: auto;
 }
 
@@ -114,17 +121,18 @@ article {
     
     padding: 1.6rem 2.4rem;
     height: 45vh;
+    overflow: hidden;
 }
 
 .article--left {
-  border-top: solid 1px var(--color-header);
-  border-left: solid 1px var(--color-header);
+  border-top: solid 1px var(--color-article-border);
+  border-left: solid 1px var(--color-article-border);
 }
 
 .article--right {
-  border-top: solid 1px var(--color-header);
-  border-right: solid 1px var(--color-header);
-  border-left: solid 1px var(--color-header);
+  border-top: solid 1px var(--color-article-border);
+  border-right: solid 1px var(--color-article-border);
+  border-left: solid 1px var(--color-article-border);
 }
 
 .article__title {
@@ -159,26 +167,42 @@ article {
 
 .article__users {
     display: flex;
-    gap: 0.5rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 1.2rem;
+
+    position: relative;
 }
 
 .article__img {
     width: 2.4rem;;
     height: 2.4rem;
-    margin-right: 1.6rem;
+    position: absolute;
+    transform: translateY(-20%);
 }
 
 .article__linkUser {
-    margin-right: 1.2 rem;
+    white-space: nowrap;
+    padding: 0 1.2rem 0 2.8rem;
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-time {
-    color: #C2C6CC;
+.artic__reading {
+  color: #007bff;
+  font-weight: bold;
 }
 
+.artic__reading:hover {
+  color: #0056b3;
+}
+
+.article_time {
+  white-space: nowrap;
+    color: #C2C6CC;
+    overflow-wrap: break-word;
+}
 
 figcaption {
     display: flex;
