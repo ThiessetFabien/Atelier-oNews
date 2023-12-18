@@ -88,6 +88,7 @@ body {
     color: var(--color-white);
 }
 
+/*MAIN*/
 main {
     flex-grow: 1;
     flex-basis: 50%;
